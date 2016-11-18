@@ -1,0 +1,260 @@
+html {
+	font-size: calc(80% + 0.5vw);
+}
+body{
+	background-color: #1d282b;
+	font-family: "Verdana", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.article{
+    min-height: 300px;
+    font-size: calc(50% + 0.5vw);
+}
+.article .auto_img{
+    float: left;
+    max-width: 100%;
+    margin-right: 30px;
+}
+.article .auto_img img{
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 250px;
+}
+
+.auto_img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 24px;
+}
+
+header{
+	background-color: #f0f0f0;
+    color: #4a4a4a;
+	text-align: center;
+	min-width: 480px;
+	max-width: 1200px;
+	padding: 40px 0 40px 300px; ;	
+	margin-top: 0;
+}
+h1{
+    font-size: 1.8em;
+	margin: 0;
+}
+h2{
+    font-size: 1.2em;
+}
+footer{
+	text-align: center;
+    background-color: #f0f0f0;
+    min-width: 480px;
+    max-width: 1200px;
+    padding-left: 300px;
+    height: 100px;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.left_side{
+    
+    background: #1d282b;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 5;
+}
+.auth input{
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.auth a{
+    font-size: 0.6em;
+    color: #fff;
+}
+.auth span{
+    margin-left: 50px;
+    font-size: 0.7em;
+}
+.logo_text{
+    padding: 20px 0px;
+    color:#ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.logo_text a{
+    display: inline-block;
+}
+.logo_text span{
+    color:#72898f;
+    font-size: 14px;
+    font-family: Verdana;
+    line-height: 24px;
+    padding: 0 10px 18px;
+    text-align: center;
+    display: block;
+}
+.logo_text img{
+	border-radius: 10px;
+	border: 5px solid white;
+}
+.left_menu{
+    margin-top: 30px;
+}
+.left_menu ul{
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+.left_menu li{
+    display: block;
+    height: 40px;
+    line-height: 30px;
+}
+.left_menu li a{
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    color:#ffffff;
+    text-decoration: none;
+    padding-left: 60px;
+}
+.left_menu li a:hover{
+    background: #343e41;
+}
+.social_img{
+    text-align: center;
+}
+.social_img a{
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.social_img a:hover{
+    opacity: 0.7;
+}
+.tw_icon{
+    background: url("../images/social.png") top left no-repeat;
+}
+.go_icon{
+    background: url("../images/social.png") top right no-repeat;
+}
+.left_swap{
+   /*display: none;По умолчанию блок не виден,
+    он показывается, если срабатывает медиазапрос */
+    position: fixed;
+    width: 40px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 6;
+    background: #1d282b;
+}
+.left_swap img{
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.wrapper{
+    position: relative;
+    background: #ffffff;
+    min-height: 900px;
+    min-width: 480px;
+    max-width: 1200px;
+    padding-left: 300px;
+    padding-right: 0px;
+    margin: 0;
+    //box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.wrapper a{
+    color:#576a6f;
+}
+.wrapper a:hover{
+    color:#1d282b;
+}
+.text_block{
+    overflow: hidden;
+    color:#4a4a4a;
+    line-height: 24px;
+    min-height: 200px;    
+    padding: 10px 40px 10px;
+}
+.cent_img{
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.statja_img{
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+    border: 2px solid #f0f0f0;
+}
+.footer{
+    text-align: center;
+
+}
+.footer_block{
+    display: inline-block;
+    width: 200px;
+    min-height: 100px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.userpanel{
+    color: #fff;
+    font-size: 0.7em;
+    margin-left: 50px;
+}
+.userpanel a{
+    font-size: 0.7em;
+    color: #fff;
+}
+
+@media screen and (max-width:800px){
+    .left_side{
+        display: none;
+        width: 240px;
+    }
+    
+    .wrapper{
+        padding-left: 50px;
+    }
+    header, footer{
+        padding-left: 50px;
+    }
+    .logo_text{
+        display: none;
+    }
+    .left_menu {
+        margin-top: 0;
+    }
+    .left_menu li{   
+        height: 2em;
+        line-height: 2em;
+    }
+    .left_menu li a{        
+        line-height: 2em;
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width:720px){
+    .left_side{
+        display: none;
+        width: 240px;
+    }
+    .footer_block{
+        display: block;
+        width: 96%;
+    }
+}
